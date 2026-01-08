@@ -29,9 +29,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-bold mb-6">Contact</h3>
                         <ul className="space-y-4 text-gray-400">
-                            <li>info@bioguogu.com</li>
-                            <li>+82 02-1234-5678</li>
-                            <li>Seoul, Korea</li>
+                            <li>광주광역시 서구 상무대로 지하1123 서구스타트업센터</li>
+                            <li>대표자: 조인아</li>
+                            <li>info@bioguogu.com (임시)</li>
+                            <li>+82 10-0000-0000 (임시)</li>
                         </ul>
                     </div>
                 </div>

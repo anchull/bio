@@ -1,8 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Hero() {
+    useEffect(() => {
+        // Prevent browser from restoring scroll position automatically
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        // Force scroll to top
+        window.scrollTo(0, 0);
+
+        // Optional: Ensure it stays at top after a short delay (for slower connections)
+        const timer = setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 100);
+
+        return () => {
+            // Restore default behavior when component unmounts
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'auto';
+            }
+            clearTimeout(timer);
+        };
+    }, []);
+
     return (
         <section id="hero" className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
             {/* Background Image/Overlay */}
