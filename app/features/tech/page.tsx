@@ -8,7 +8,7 @@ export default function TechPage() {
             <SubPageHero
                 title="Core Technology"
                 subtitle="INNOVATION"
-                backgroundImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2940&auto=format&fit=crop"
+                backgroundImage="/images/hero_feature_tech.png"
             />
             <section className="py-24 container mx-auto px-6">
                 {/* Tech Block 1 */}
@@ -33,7 +33,7 @@ export default function TechPage() {
                     </div>
                     <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
                         <img
-                            src="https://images.unsplash.com/photo-1633412802994-5c058f151b66?q=80&w=2940"
+                            src="/images/tech_ai_analysis.png"
                             alt="AI Technology"
                             className="w-full h-auto object-cover"
                         />
@@ -41,7 +41,7 @@ export default function TechPage() {
                 </div>
 
                 {/* Tech Block 2 */}
-                <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
+                <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-24">
                     <div className="w-full lg:w-1/2">
                         <span className="text-primary font-bold text-sm uppercase mb-2 block">Ambient Light Correction</span>
                         <h2 className="text-3xl font-bold mb-6">환경 변수 자동 보정 기술</h2>
@@ -64,6 +64,36 @@ export default function TechPage() {
                         <img
                             src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2940"
                             alt="Technology Correction"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+                </div>
+
+                {/* Tech Block 3 */}
+                <div className="flex flex-col lg:flex-row items-center gap-16">
+                    <div className="w-full lg:w-1/2">
+                        <span className="text-primary font-bold text-sm uppercase mb-2 block">Dental Health Science</span>
+                        <h2 className="text-3xl font-bold mb-6">Dual-Action <br /> 구강 케어 메커니즘</h2>
+                        <p className="text-gray-600 leading-relaxed mb-6">
+                            물리적 마찰과 유효 성분의 작용을 결합한 이중 케어 솔루션입니다.
+                            특수 설계된 공기 구멍(Air Hole) 구조가 잇몸 깊숙한 곳의 치석을 자극 없이 제거하며,
+                            SHMP와 OraCMU 성분이 입 냄새 원인균을 억제하여 구강 환경을 개선합니다.
+                        </p>
+                        <ul className="space-y-3">
+                            <li className="flex items-center gap-3 text-gray-700">
+                                <div className="w-2 h-2 rounded-full bg-primary" />
+                                특허받은 Air Hole 구조의 물리적 스케일링
+                            </li>
+                            <li className="flex items-center gap-3 text-gray-700">
+                                <div className="w-2 h-2 rounded-full bg-primary" />
+                                유산균(OraCMU) & SHMP 함유
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+                        <img
+                            src="/images/tech_dental_mechanism.png"
+                            alt="Dental Chew Technology"
                             className="w-full h-auto object-cover"
                         />
                     </div>

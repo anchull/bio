@@ -8,7 +8,7 @@ export default function DiagnosticProductPage() {
             <SubPageHero
                 title="Diagnostic Kit"
                 subtitle="PRODUCT"
-                backgroundImage="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?q=80&w=2940&auto=format&fit=crop"
+                backgroundImage="/images/hero_product_diagnostic.png"
             />
             {/* Full Screen Image Presentation */}
             <section className="py-20 w-full">

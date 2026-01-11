@@ -8,7 +8,7 @@ export default function AppPage() {
             <SubPageHero
                 title="Mobile Application"
                 subtitle="SMART CARE"
-                backgroundImage="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop"
+                backgroundImage="/images/hero_feature_app.png"
             />
             <section className="py-24 container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-20">

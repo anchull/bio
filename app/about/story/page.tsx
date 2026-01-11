@@ -8,7 +8,7 @@ export default function BrandStoryPage() {
             <SubPageHero
                 title="Brand Story"
                 subtitle="OUR JOURNEY"
-                backgroundImage="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=2787&auto=format&fit=crop"
+                backgroundImage="/images/hero_about_story.png"
             />
             <section className="py-24 container mx-auto px-6">
                 <div className="max-w-4xl mx-auto">
@@ -23,18 +23,17 @@ export default function BrandStoryPage() {
                         </p>
                     </div>
 
-                    <div className="relative w-full h-[500px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+                    <div className="relative w-full rounded-3xl overflow-hidden mb-12 shadow-2xl border border-gray-100">
                         <img
-                            src="https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=2674"
-                            alt="Happy dog running"
-                            className="w-full h-full object-cover"
+                            src="/images/brand_representative.jpg"
+                            alt="Bioguogu Brand Representative"
+                            className="w-full h-auto"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                        <div className="absolute bottom-10 left-10 text-white max-w-lg">
-                            <p className="text-2xl font-bold italic">
-                                "사랑한다면 관찰이 아닌, 진단을 시작하세요."
-                            </p>
-                        </div>
+                    </div>
+                    <div className="text-center mb-16">
+                        <p className="text-2xl font-bold italic text-primary">
+                            "사랑한다면 관찰이 아닌, 진단을 시작하세요."
+                        </p>
                     </div>
 
                     <div className="prose prose-lg max-w-none text-gray-600">

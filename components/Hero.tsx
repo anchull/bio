@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function Hero() {
     useEffect(() => {
@@ -67,12 +68,12 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4">
-                        <button className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/25">
+                        <Link href="/products/diagnostic" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 text-center">
                             제품 보러가기
-                        </button>
-                        <button className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all">
+                        </Link>
+                        <Link href="/about/story" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all text-center">
                             브랜드 스토리
-                        </button>
+                        </Link>
                     </div>
                 </motion.div>
             </div>

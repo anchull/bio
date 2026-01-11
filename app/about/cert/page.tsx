@@ -6,20 +6,47 @@ export default function CertPage() {
     return (
         <main className="min-h-screen bg-white">
             <SubPageHero
-                title="Certifications"
-                subtitle="TRUST"
-                backgroundImage="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2940&auto=format&fit=crop"
+                title="품질 인증 현황"
+                subtitle="CERTIFICATIONS"
+                backgroundImage="/images/hero_about_cert.png"
             />
-            <section className="py-20 container mx-auto px-6">
-                <h2 className="text-3xl font-bold mb-6">공인된 기술력</h2>
-                <p className="text-gray-600 mb-12">국내외 전문 기관 검증을 통과한 안전하고 정확한 제품만을 만듭니다.</p>
+            <section className="py-24 container mx-auto px-6">
+                <div className="text-center max-w-3xl mx-auto mb-20">
+                    <span className="text-primary font-bold tracking-wider text-sm uppercase mb-3 block">Global Standards</span>
+                    <h2 className="text-4xl font-bold mb-6">검증된 품질, 믿을 수 있는 제조</h2>
+                    <p className="text-gray-600 text-lg">
+                        바이오구오구의 모든 제품은 국제 표준 품질 경영 시스템과 <br />
+                        엄격한 식품 안전 관리 기준을 통과한 시설에서 생산됩니다.
+                    </p>
+                </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-gray-400 font-bold border rounded-xl p-12">
-                    {/* Placeholder for Logos */}
-                    <div className="p-4 border border-dashed rounded flex items-center justify-center">ISO 13485</div>
-                    <div className="p-4 border border-dashed rounded flex items-center justify-center">HACCP</div>
-                    <div className="p-4 border border-dashed rounded flex items-center justify-center">벤처기업 인증</div>
-                    <div className="p-4 border border-dashed rounded flex items-center justify-center">FDA 등록</div>
+                <div className="flex flex-col gap-16 max-w-4xl mx-auto">
+                    {/* Certification 1: HACCP */}
+                    <div className="rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                        <img
+                            src="/images/cert_haccp.png"
+                            alt="HACCP Certification Info"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+
+                    {/* Certification 2: FSSC 22000 */}
+                    <div className="rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                        <img
+                            src="/images/cert_fssc.png"
+                            alt="FSSC 22000 Certification Info"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
+
+                    {/* Certification 3: ISO 9001 & 14001 */}
+                    <div className="rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+                        <img
+                            src="/images/cert_iso.png"
+                            alt="ISO Certification Info"
+                            className="w-full h-auto object-cover"
+                        />
+                    </div>
                 </div>
             </section>
         </main>

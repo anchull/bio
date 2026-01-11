@@ -22,16 +22,16 @@ export default function Navbar() {
         { name: "HOME", href: "/" },
         {
             name: "ABOUT",
-            href: "/about",
+            href: "/about/story",
             subMenus: [
                 { name: "브랜드 스토리", href: "/about/story" },
                 { name: "브랜드 철학", href: "/about/philosophy" },
-                { name: "인증 및 수상", href: "/about/cert" }
+                { name: "품질 인증 현황", href: "/about/cert" }
             ]
         },
         {
             name: "PRODUCT",
-            href: "/products",
+            href: "/products/diagnostic",
             subMenus: [
                 { name: "진단 키트", href: "/products/diagnostic" },
                 { name: "덴탈 껌", href: "/products/chew" }
@@ -39,7 +39,7 @@ export default function Navbar() {
         },
         {
             name: "FEATURE",
-            href: "/features",
+            href: "/features/tech",
             subMenus: [
                 { name: "핵심 기술", href: "/features/tech" },
                 { name: "앱 주요 기능", href: "/features/app" }
@@ -47,7 +47,7 @@ export default function Navbar() {
         },
         {
             name: "CONTACT",
-            href: "/contact",
+            href: "/contact/faq",
             subMenus: [
                 { name: "자주 묻는 질문", href: "/contact/faq" },
                 { name: "고객 지원", href: "/contact/support" },

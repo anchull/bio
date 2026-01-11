@@ -8,7 +8,7 @@ export default function PartnerPage() {
             <SubPageHero
                 title="App Partnership"
                 subtitle="BUSINESS"
-                backgroundImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop"
+                backgroundImage="/images/hero_contact_partner.png"
             />
             <section className="py-24 container mx-auto px-6">
                 <div className="text-center md:text-left mb-16 max-w-3xl">

@@ -8,7 +8,7 @@ export default function FaqPage() {
             <SubPageHero
                 title="FAQ"
                 subtitle="QUESTIONS"
-                backgroundImage="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=2787&auto=format&fit=crop"
+                backgroundImage="/images/hero_contact_faq.png"
             />
             <section className="py-24 container mx-auto px-6 max-w-4xl">
                 <div className="mb-12 text-center">

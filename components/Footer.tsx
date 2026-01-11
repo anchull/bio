@@ -2,9 +2,9 @@ export default function Footer() {
     return (
         <footer id="contact" className="bg-foreground text-white py-16">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 border-b border-white/10 pb-12 mb-12">
+                <div className="flex flex-col md:flex-row justify-between gap-12 border-b border-white/10 pb-12 mb-12">
                     {/* Brand */}
-                    <div className="col-span-1 md:col-span-2">
+                    <div>
                         <h2 className="text-2xl font-bold mb-6">
                             <span className="text-primary">BIO</span>GUOGU
                         </h2>
@@ -14,19 +14,8 @@ export default function Footer() {
                         </p>
                     </div>
 
-                    {/* Links */}
-                    <div>
-                        <h3 className="text-lg font-bold mb-6">Company</h3>
-                        <ul className="space-y-4 text-gray-400">
-                            <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Our Team</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-
                     {/* Contact */}
-                    <div>
+                    <div className="md:text-right">
                         <h3 className="text-lg font-bold mb-6">Contact</h3>
                         <ul className="space-y-4 text-gray-400">
                             <li>광주광역시 서구 상무대로 지하1123 서구스타트업센터</li>
@@ -39,12 +28,7 @@ export default function Footer() {
 
                 <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
                     <p>&copy; {new Date().getFullYear()} Bioguogu. All rights reserved.</p>
-                    <div className="flex gap-4 mt-4 md:mt-0">
-                        {/* Social placeholders */}
-                        <div className="w-5 h-5 bg-gray-700 rounded-full"></div>
-                        <div className="w-5 h-5 bg-gray-700 rounded-full"></div>
-                        <div className="w-5 h-5 bg-gray-700 rounded-full"></div>
-                    </div>
+
                 </div>
             </div>
         </footer>
