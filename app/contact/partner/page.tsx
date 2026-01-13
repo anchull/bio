@@ -43,11 +43,11 @@ export default function PartnerPage() {
 
                     <div className="bg-white border border-gray-100 p-8 rounded-3xl hover:shadow-xl transition-all group">
                         <div className="w-14 h-14 bg-purple-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            <span className="font-bold">T</span>
+                            <span className="font-bold">F</span>
                         </div>
-                        <h3 className="text-xl font-bold mb-3">기술 제휴 (Tech)</h3>
+                        <h3 className="text-xl font-bold mb-3">투자/펀딩 (Funding)</h3>
                         <p className="text-gray-500 text-sm">
-                            반려동물 데이터 분석, 헬스케어 디바이스 연동 등 기술 협력
+                            바이오구오구의 혁신적인 성장에 함께할 투자자 및 펀딩 파트너 모집
                         </p>
                     </div>
                 </div>
@@ -59,8 +59,8 @@ export default function PartnerPage() {
                             회사소개서와 제휴 제안 내용을 메일로 보내주세요.<br />
                             담당 부서가 검토 후 빠르게 연락드리겠습니다.
                         </p>
-                        <a href="mailto:business@bioguogu.com" className="inline-block bg-primary text-white font-bold py-4 px-10 rounded-full hover:bg-primary/90 transition-all shadow-lg transform hover:-translate-y-1">
-                            business@bioguogu.com
+                        <a href="/contact/support" className="inline-block bg-primary text-white font-bold py-4 px-10 rounded-full hover:bg-primary/90 transition-all shadow-lg transform hover:-translate-y-1">
+                            제휴 제안하기
                         </a>
                     </div>
                     {/* Abstract bg shapes */}
