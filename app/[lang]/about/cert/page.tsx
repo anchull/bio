@@ -1,23 +1,28 @@
-"use client";
-
 import SubPageHero from "@/components/SubPageHero";
+import { getDictionary } from "../../../../lib/dictionary";
 
-export default function CertPage() {
+export default async function CertPage({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const dict = await getDictionary(lang as any);
+
     return (
         <main className="min-h-screen bg-white">
             <SubPageHero
-                title="품질 인증 현황"
-                subtitle="CERTIFICATIONS"
+                title={dict.about.cert.hero_title}
+                subtitle={dict.about.cert.hero_subtitle}
                 backgroundImage="/images/hero_about_cert.png"
             />
             <section className="py-24 container mx-auto px-6">
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <span className="text-primary font-bold tracking-wider text-sm uppercase mb-3 block">Global Standards</span>
-                    <h2 className="text-4xl font-bold mb-6">검증된 품질, 믿을 수 있는 제조</h2>
-                    <p className="text-gray-600 text-lg">
-                        바이오구오구의 모든 제품은 국제 표준 품질 경영 시스템과 <br />
-                        엄격한 식품 안전 관리 기준을 통과한 시설에서 생산됩니다.
-                    </p>
+                    <span className="text-primary font-bold tracking-wider text-sm uppercase mb-3 block">{dict.about.cert.section_label}</span>
+                    <h2
+                        className="text-4xl font-bold mb-6"
+                        dangerouslySetInnerHTML={{ __html: dict.about.cert.title }}
+                    />
+                    <p
+                        className="text-gray-600 text-lg"
+                        dangerouslySetInnerHTML={{ __html: dict.about.cert.desc }}
+                    />
                 </div>
 
                 <div className="flex flex-col gap-16 max-w-4xl mx-auto">

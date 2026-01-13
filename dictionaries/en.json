@@ -24,7 +24,7 @@
         }
     },
     "footer": {
-        "contact": "Contact",
+        "contact": "Company Info",
         "rights": "All rights reserved.",
         "company": "LabinBio",
         "description": "We research scientific diagnostics and healthy food for a happy life with pets.",
@@ -93,6 +93,13 @@
             "p1": "Pets do not show it even if they are sick. Because of their instinct to hide pain, it is often too late when guardians notice abnormal signs.",
             "p2": "We wanted to protect this 'Golden Time'. What if anyone could easily and accurately check their health status at home, even if they can't go to the vet every day?",
             "p3": "Born after years of research by veterinary experts and data scientists, LabinBio now aims to be the most reliable health partner for pet families around the world."
+        },
+        "cert": {
+            "hero_title": "Certifications",
+            "hero_subtitle": "CERTIFICATIONS",
+            "section_label": "Global Standards",
+            "title": "Proven Quality, <br /> Reliable Manufacturing",
+            "desc": "All LabinBio products are produced in facilities that have passed international standard quality management systems and strict food safety management standards."
         }
     },
     "products": {
