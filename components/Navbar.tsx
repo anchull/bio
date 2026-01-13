@@ -26,34 +26,34 @@ export default function Navbar({ navDict, lang }: { navDict: any; lang: string }
             name: navDict.about,
             href: `/${lang}/about/story`,
             subMenus: [
-                { name: "브랜드 스토리", href: `/${lang}/about/story` },
-                { name: "브랜드 철학", href: `/${lang}/about/philosophy` },
-                { name: "품질 인증 현황", href: `/${lang}/about/cert` }
+                { name: navDict.about_submenu?.story || "브랜드 스토리", href: `/${lang}/about/story` },
+                { name: navDict.about_submenu?.philosophy || "브랜드 철학", href: `/${lang}/about/philosophy` },
+                { name: navDict.about_submenu?.cert || "품질 인증 현황", href: `/${lang}/about/cert` }
             ]
         },
         {
             name: navDict.products,
             href: `/${lang}/products/diagnostic`,
             subMenus: [
-                { name: "진단 키트", href: `/${lang}/products/diagnostic` },
-                { name: "덴탈 껌", href: `/${lang}/products/chew` }
+                { name: navDict.products_submenu?.diagnostic || "진단 키트", href: `/${lang}/products/diagnostic` },
+                { name: navDict.products_submenu?.chew || "덴탈 껌", href: `/${lang}/products/chew` }
             ]
         },
         {
             name: navDict.features,
             href: `/${lang}/features/tech`,
             subMenus: [
-                { name: "핵심 기술", href: `/${lang}/features/tech` },
-                { name: "앱 주요 기능", href: `/${lang}/features/app` }
+                { name: navDict.features_submenu?.tech || "핵심 기술", href: `/${lang}/features/tech` },
+                { name: navDict.features_submenu?.app || "앱 주요 기능", href: `/${lang}/features/app` }
             ]
         },
         {
             name: navDict.contact,
             href: `/${lang}/contact/faq`,
             subMenus: [
-                { name: "자주 묻는 질문", href: `/${lang}/contact/faq` },
-                { name: "고객 지원", href: `/${lang}/contact/support` },
-                { name: "제휴 문의", href: `/${lang}/contact/partner` }
+                { name: navDict.contact_submenu?.faq || "자주 묻는 질문", href: `/${lang}/contact/faq` },
+                { name: navDict.contact_submenu?.support || "고객 지원", href: `/${lang}/contact/support` },
+                { name: navDict.contact_submenu?.partner || "제휴 문의", href: `/${lang}/contact/partner` }
             ]
         },
     ];

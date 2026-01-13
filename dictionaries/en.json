@@ -3,7 +3,25 @@
         "about": "About",
         "products": "Products",
         "features": "Features",
-        "contact": "Contact"
+        "contact": "Contact",
+        "about_submenu": {
+            "story": "Brand Story",
+            "philosophy": "Philosophy",
+            "cert": "Certifications"
+        },
+        "products_submenu": {
+            "diagnostic": "Diagnostic Kit",
+            "chew": "Dental Chew"
+        },
+        "features_submenu": {
+            "tech": "Core Technology",
+            "app": "App Features"
+        },
+        "contact_submenu": {
+            "faq": "FAQ",
+            "support": "Support",
+            "partner": "Partnership"
+        }
     },
     "footer": {
         "contact": "Contact",
