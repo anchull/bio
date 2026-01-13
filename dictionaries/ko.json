@@ -27,7 +27,9 @@
         "contact": "연락처",
         "rights": "All rights reserved.",
         "company": "바이오구오구",
-        "description": "반려동물과 함께하는 행복한 삶을 위해, 과학적인 진단과 건강한 먹거리를 연구합니다."
+        "description": "반려동물과 함께하는 행복한 삶을 위해, 과학적인 진단과 건강한 먹거리를 연구합니다.",
+        "address": "광주광역시 서구 상무대로 지하1123 서구스타트업센터",
+        "representative": "대표자: 조인아"
     },
     "hero": {
         "preheading": "PREMIUM PET HEALTHCARE",

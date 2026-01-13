@@ -19,8 +19,8 @@ export default function Footer({ footerDict }: { footerDict: any }) {
                     <div className="md:text-right">
                         <h3 className="text-lg font-bold mb-6">{footerDict.contact}</h3>
                         <ul className="space-y-4 text-gray-400">
-                            <li>광주광역시 서구 상무대로 지하1123 서구스타트업센터</li>
-                            <li>대표자: 조인아</li>
+                            <li>{footerDict.address || "광주광역시 서구 상무대로 지하1123 서구스타트업센터"}</li>
+                            <li>{footerDict.representative || "대표자: 조인아"}</li>
 
                         </ul>
                     </div>
