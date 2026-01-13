@@ -44,14 +44,6 @@ export default function Hero({ heroDict, lang }: { heroDict: any; lang: string }
                 Your browser does not support the video tag.
             </video>
 
-            {/* Fallback background if video fails */}
-            <div
-                className="absolute inset-0 z-0 bg-cover bg-center"
-                style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2969&auto=format&fit=crop')",
-                    opacity: 0.3
-                }}
-            />
 
             {/* Gradient Overlay */}
             <div className="absolute inset-0 z-10 bg-black/40" />
