@@ -14,7 +14,7 @@ export default async function DiagnosticProductPage({ params }: { params: Promis
             />
             {/* Full Screen Image Presentation */}
             <section className="py-20 w-full">
-                <div className="w-full max-w-[1000px] mx-auto px-6">
+                <div className="w-full max-w-[1280px] mx-auto px-6">
                     <img
                         src={lang === 'en' ? "/images/diagnostic_detail_en.jpg" : "/images/diagnostic_detail.jpg"}
                         alt="Diagnostic Kit Detail"
