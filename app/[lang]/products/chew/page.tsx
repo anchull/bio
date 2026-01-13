@@ -1,13 +1,15 @@
-"use client";
-
 import SubPageHero from "@/components/SubPageHero";
+import { getDictionary } from "../../../../lib/dictionary";
 
-export default function ChewProductPage() {
+export default async function ChewProductPage({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const dict = await getDictionary(lang as any);
+
     return (
         <main className="min-h-screen bg-white">
             <SubPageHero
-                title="Dental Chew"
-                subtitle="PRODUCT"
+                title={dict.products.chew.title}
+                subtitle={dict.products.chew.subtitle}
                 backgroundImage="/images/hero_product_chew.png"
             />
             {/* Full Screen Image Presentation */}

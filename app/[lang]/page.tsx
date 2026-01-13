@@ -13,8 +13,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     <main className="flex min-h-screen flex-col bg-white">
       <ScrollProgress />
       <Hero heroDict={dict.hero} lang={lang} />
-      <DiagnosticSection />
-      <ChewSection />
+      <DiagnosticSection dict={dict.home.diagnostic} />
+      <ChewSection dict={dict.home.chew} />
     </main>
   );
 }

@@ -1,13 +1,15 @@
-"use client";
-
 import SubPageHero from "@/components/SubPageHero";
+import { getDictionary } from "../../../../lib/dictionary";
 
-export default function DiagnosticProductPage() {
+export default async function DiagnosticProductPage({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const dict = await getDictionary(lang as any);
+
     return (
         <main className="min-h-screen bg-white">
             <SubPageHero
-                title="Diagnostic Kit"
-                subtitle="PRODUCT"
+                title={dict.products.diagnostic.title}
+                subtitle={dict.products.diagnostic.subtitle}
                 backgroundImage="/images/hero_product_diagnostic.png"
             />
             {/* Full Screen Image Presentation */}

@@ -1,22 +1,27 @@
-"use client";
-
 import SubPageHero from "@/components/SubPageHero";
+import { getDictionary } from "../../../../lib/dictionary";
 
-export default function PartnerPage() {
+export default async function PartnerPage({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const dict = await getDictionary(lang as any);
+    const t = dict.contact.partner;
+
     return (
         <main className="min-h-screen bg-white">
             <SubPageHero
-                title="App Partnership"
-                subtitle="BUSINESS"
+                title={t.hero_title}
+                subtitle={t.hero_subtitle}
                 backgroundImage="/images/hero_contact_partner.png"
             />
             <section className="py-24 container mx-auto px-6">
                 <div className="text-center md:text-left mb-16 max-w-3xl">
-                    <span className="text-primary font-bold tracking-wider text-sm uppercase mb-3 block">Partnership</span>
-                    <h2 className="text-4xl font-bold mb-6">함께 성장할 파트너를 찾습니다</h2>
+                    <span className="text-primary font-bold tracking-wider text-sm uppercase mb-3 block">{t.section_label}</span>
+                    <h2
+                        className="text-4xl font-bold mb-6"
+                        dangerouslySetInnerHTML={{ __html: t.main_title }}
+                    />
                     <p className="text-gray-600 text-lg leading-relaxed">
-                        바이오구오구는 혁신적인 반려동물 헬스케어 생태계를 함께 만들어갈 <br className="hidden md:block" />
-                        다양한 분야의 파트너사를 기다리고 있습니다.
+                        <span dangerouslySetInnerHTML={{ __html: t.main_desc }} />
                     </p>
                 </div>
 
@@ -25,9 +30,9 @@ export default function PartnerPage() {
                         <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                             <span className="font-bold">H</span>
                         </div>
-                        <h3 className="text-xl font-bold mb-3">동물 병원 (Hospital)</h3>
+                        <h3 className="text-xl font-bold mb-3">{t.cards[0].title}</h3>
                         <p className="text-gray-500 text-sm">
-                            바이오구오구 검사 결과를 활용한 진료 연계 및 스마트 헬스케어 솔루션 도입
+                            {t.cards[0].desc}
                         </p>
                     </div>
 
@@ -35,9 +40,9 @@ export default function PartnerPage() {
                         <div className="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
                             <span className="font-bold">S</span>
                         </div>
-                        <h3 className="text-xl font-bold mb-3">유통/판매 (Sales)</h3>
+                        <h3 className="text-xl font-bold mb-3">{t.cards[1].title}</h3>
                         <p className="text-gray-500 text-sm">
-                            온/오프라인 펫샵, 약국 등 바이오구오구 제품 입점 및 판매 제휴
+                            {t.cards[1].desc}
                         </p>
                     </div>
 
@@ -45,22 +50,22 @@ export default function PartnerPage() {
                         <div className="w-14 h-14 bg-purple-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             <span className="font-bold">F</span>
                         </div>
-                        <h3 className="text-xl font-bold mb-3">투자/펀딩 (Funding)</h3>
+                        <h3 className="text-xl font-bold mb-3">{t.cards[2].title}</h3>
                         <p className="text-gray-500 text-sm">
-                            바이오구오구의 혁신적인 성장에 함께할 투자자 및 펀딩 파트너 모집
+                            {t.cards[2].desc}
                         </p>
                     </div>
                 </div>
 
                 <div className="bg-gray-900 rounded-3xl p-10 md:p-16 text-center text-white relative overflow-hidden">
                     <div className="relative z-10">
-                        <h3 className="text-3xl font-bold mb-4">제휴 제안하기</h3>
-                        <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-                            회사소개서와 제휴 제안 내용을 메일로 보내주세요.<br />
-                            담당 부서가 검토 후 빠르게 연락드리겠습니다.
-                        </p>
-                        <a href="/contact/support" className="inline-block bg-primary text-white font-bold py-4 px-10 rounded-full hover:bg-primary/90 transition-all shadow-lg transform hover:-translate-y-1">
-                            제휴 제안하기
+                        <h3 className="text-3xl font-bold mb-4">{t.cta.title}</h3>
+                        <p
+                            className="text-gray-400 mb-8 max-w-xl mx-auto"
+                            dangerouslySetInnerHTML={{ __html: t.cta.desc }}
+                        />
+                        <a href={`/${lang}/contact/support`} className="inline-block bg-primary text-white font-bold py-4 px-10 rounded-full hover:bg-primary/90 transition-all shadow-lg transform hover:-translate-y-1">
+                            {t.cta.button}
                         </a>
                     </div>
                     {/* Abstract bg shapes */}

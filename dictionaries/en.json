@@ -17,5 +17,185 @@
         "description": "LabinBio provides a total solution to easily diagnose your pet's health at home with cutting-edge bio technology and manage it with healthy snacks.",
         "cta_product": "View Products",
         "cta_story": "Brand Story"
+    },
+    "home": {
+        "diagnostic": {
+            "label": "Diagnostic Kit",
+            "title": "Start <br /> <span class='text-primary'>Pet Health Check</span> at Home",
+            "description": "No stress, no vet visit needed. <br /> LabinBio diagnostic kits help detect early signs of major diseases like kidney disease and diabetes through your pet's urine.",
+            "steps": [
+                {
+                    "title": "Simple Test",
+                    "desc": "1 minute at home is enough. Check your pet's health status with a urine test."
+                },
+                {
+                    "title": "App Results",
+                    "desc": "Scan the test result with our app to see real-time analysis."
+                },
+                {
+                    "title": "Steady Management",
+                    "desc": "Accumulate test records to monitor health trends and prevent issues."
+                }
+            ],
+            "image_text": {
+                "title": "Smart Check Kit",
+                "desc": "Produced in ISO 13485 Certified Facility"
+            }
+        },
+        "chew": {
+            "label": "Healthy Snack",
+            "title": "Protect <br /> <span class='text-primary'>Dental Health</span> while Chewing",
+            "description": "LabinBio Dental Chew is more than just a snack. <br /> It is a functional dental care solution designed with veterinary dental experts.",
+            "benefits": [
+                {
+                    "title": "Tartar & Breath Care",
+                    "desc": "Specially designed cross-section effectively removes plaque between teeth."
+                },
+                {
+                    "title": "Allergy Free",
+                    "desc": "Grain-free formula excluding grain allergy-inducing ingredients."
+                },
+                {
+                    "title": "Stress Relief",
+                    "desc": "Relieves stress with appropriate hardness for long-lasting chewing."
+                }
+            ]
+        }
+    },
+    "about": {
+        "story": {
+            "hero_title": "Brand Story",
+            "hero_subtitle": "OUR JOURNEY",
+            "section_label": "The Beginning",
+            "main_title": "\"Can we notice the pain <br /> of our silent children first?\"",
+            "main_desc": "LabinBio started from this small but desperate question.",
+            "quote": "\"If you love them, start diagnosing, not just observing.\"",
+            "p1": "Pets do not show it even if they are sick. Because of their instinct to hide pain, it is often too late when guardians notice abnormal signs.",
+            "p2": "We wanted to protect this 'Golden Time'. What if anyone could easily and accurately check their health status at home, even if they can't go to the vet every day?",
+            "p3": "Born after years of research by veterinary experts and data scientists, LabinBio now aims to be the most reliable health partner for pet families around the world."
+        }
+    },
+    "products": {
+        "diagnostic": {
+            "title": "Diagnostic Kit",
+            "subtitle": "PRODUCT"
+        },
+        "chew": {
+            "title": "Dental Chew",
+            "subtitle": "PRODUCT"
+        }
+    },
+    "features": {
+        "tech": {
+            "hero_title": "Core Technology",
+            "hero_subtitle": "INNOVATION",
+            "block1": {
+                "label": "Machine Vision AI",
+                "title": "AI Color Analysis Algorithm <br /> with Zero Error",
+                "desc": "Proprietary deep learning AI model trained on tens of thousands of pet urine data points detects minute color changes. It analyzes subtle color differences indistinguishable by the human eye to provide highly reliable results.",
+                "list": [
+                    "99.9% Analysis Accuracy",
+                    "Real-time Image Processing Engine"
+                ]
+            },
+            "block2": {
+                "label": "Ambient Light Correction",
+                "title": "Automatic Environmental <br /> Variable Correction",
+                "desc": "Automatically corrects color distortion caused by different lighting environments (fluorescent, incandescent, natural light, etc.) and shooting angles in every home. Standardizing results in any environment is the core of LabinBio's technology.",
+                "list": [
+                    "Auto White Balance Adjustment",
+                    "Multi-angle Distortion Correction"
+                ]
+            },
+            "block3": {
+                "label": "Dental Health Science",
+                "title": "Dual-Action <br /> Oral Care Mechanism",
+                "desc": "A double care solution combining physical friction and active ingredients. The specially designed Air Hole structure removes tartar deep in the gum line without irritation, and SHMP & OraCMU ingredients inhibit bad breath-causing bacteria.",
+                "list": [
+                    "Physical Scaling with Air Hole",
+                    "Contains OraCMU & SHMP"
+                ]
+            }
+        },
+        "app": {
+            "hero_title": "Mobile Application",
+            "hero_subtitle": "SMART CARE",
+            "section_label": "Smart Healthcare App",
+            "main_title": "Veterinarian in Your Pocket, <br /> LabinBio App",
+            "main_desc": "Manage everything from complex health records to expert consultations smartly with one app.",
+            "features": [
+                {
+                    "title": "Real-time Health Report",
+                    "desc": "Shows analysis results and risk levels for 10 items in an intuitive graph immediately after scanning."
+                },
+                {
+                    "title": "Health History Tracking",
+                    "desc": "Accumulate past test records to grasp health trends at a glance and prevent abnormalities."
+                },
+                {
+                    "title": "Vet Consultation Connection",
+                    "desc": "If you have more questions about the test results, you can proceed with non-face-to-face consultation with affiliated veterinarians."
+                }
+            ]
+        }
+    },
+    "contact": {
+        "partner": {
+            "hero_title": "App Partnership",
+            "hero_subtitle": "BUSINESS",
+            "section_label": "Partnership",
+            "main_title": "We are looking for partners <br /> to grow with us",
+            "main_desc": "LabinBio is waiting for partners in various fields to create an innovative pet healthcare ecosystem together.",
+            "cards": [
+                {
+                    "title": "Animal Hospital",
+                    "desc": "Medical connection using LabinBio test results and introduction of smart healthcare solutions"
+                },
+                {
+                    "title": "Distribution/Sales",
+                    "desc": "LabinBio product entry and sales partnership in on/offline pet shops, pharmacies, etc."
+                },
+                {
+                    "title": "Investment/Funding",
+                    "desc": "Recruiting investors and funding partners to join LabinBio's innovative growth"
+                }
+            ],
+            "cta": {
+                "title": "Propose Partnership",
+                "desc": "Please send your company introduction and partnership proposal via email.<br /> Our team will review and contact you shortly.",
+                "button": "Propose Partnership"
+            }
+        },
+        "support": {
+            "hero_title": "Customer Support",
+            "hero_subtitle": "HELP",
+            "title": "1:1 Inquiry",
+            "desc": "If you have any inconvenience or need help while using the product, please leave an inquiry.<br /> Our representative will check and reply promptly.",
+            "form": {
+                "name": "Name",
+                "contact": "Contact",
+                "email": "Email",
+                "type": "Inquiry Type",
+                "content": "Content",
+                "placeholder_name": "John Doe",
+                "placeholder_contact": "010-0000-0000",
+                "placeholder_email": "example@email.com",
+                "placeholder_content": "Please write your inquiry in detail.",
+                "submit": "Submit Inquiry",
+                "types": [
+                    "Product Inquiry",
+                    "Shipping/Order Inquiry",
+                    "App Usage Inquiry",
+                    "Other"
+                ]
+            }
+        },
+        "faq": {
+            "hero_title": "FAQ",
+            "hero_subtitle": "QUESTIONS",
+            "label": "Help Center",
+            "title": "Frequently Asked Questions",
+            "desc": "We have collected the questions customers ask most frequently."
+        }
     }
 }
