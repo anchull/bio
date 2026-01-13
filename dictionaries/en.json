@@ -1,0 +1,21 @@
+{
+    "nav": {
+        "about": "About",
+        "products": "Products",
+        "features": "Features",
+        "contact": "Contact"
+    },
+    "footer": {
+        "contact": "Contact",
+        "rights": "All rights reserved.",
+        "company": "LabinBio",
+        "description": "We research scientific diagnostics and healthy food for a happy life with pets."
+    },
+    "hero": {
+        "preheading": "PREMIUM PET HEALTHCARE",
+        "title": "The Start of <br /> <span class='text-primary'>Smart Healthcare</span> for Dogs",
+        "description": "LabinBio provides a total solution to easily diagnose your pet's health at home with cutting-edge bio technology and manage it with healthy snacks.",
+        "cta_product": "View Products",
+        "cta_story": "Brand Story"
+    }
+}

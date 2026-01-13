@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Navbar() {
+export default function Navbar({ navDict, lang }: { navDict: any; lang: string }) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [hoveredLink, setHoveredLink] = useState<string | null>(null);
+    const pathname = usePathname();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -19,42 +21,58 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: "HOME", href: "/" },
+        { name: navDict.home || "HOME", href: `/${lang}` },
         {
-            name: "ABOUT",
-            href: "/about/story",
+            name: navDict.about,
+            href: `/${lang}/about/story`,
             subMenus: [
-                { name: "브랜드 스토리", href: "/about/story" },
-                { name: "브랜드 철학", href: "/about/philosophy" },
-                { name: "품질 인증 현황", href: "/about/cert" }
+                { name: "브랜드 스토리", href: `/${lang}/about/story` },
+                { name: "브랜드 철학", href: `/${lang}/about/philosophy` },
+                { name: "품질 인증 현황", href: `/${lang}/about/cert` }
             ]
         },
         {
-            name: "PRODUCT",
-            href: "/products/diagnostic",
+            name: navDict.products,
+            href: `/${lang}/products/diagnostic`,
             subMenus: [
-                { name: "진단 키트", href: "/products/diagnostic" },
-                { name: "덴탈 껌", href: "/products/chew" }
+                { name: "진단 키트", href: `/${lang}/products/diagnostic` },
+                { name: "덴탈 껌", href: `/${lang}/products/chew` }
             ]
         },
         {
-            name: "FEATURE",
-            href: "/features/tech",
+            name: navDict.features,
+            href: `/${lang}/features/tech`,
             subMenus: [
-                { name: "핵심 기술", href: "/features/tech" },
-                { name: "앱 주요 기능", href: "/features/app" }
+                { name: "핵심 기술", href: `/${lang}/features/tech` },
+                { name: "앱 주요 기능", href: `/${lang}/features/app` }
             ]
         },
         {
-            name: "CONTACT",
-            href: "/contact/faq",
+            name: navDict.contact,
+            href: `/${lang}/contact/faq`,
             subMenus: [
-                { name: "자주 묻는 질문", href: "/contact/faq" },
-                { name: "고객 지원", href: "/contact/support" },
-                { name: "제휴 문의", href: "/contact/partner" }
+                { name: "자주 묻는 질문", href: `/${lang}/contact/faq` },
+                { name: "고객 지원", href: `/${lang}/contact/support` },
+                { name: "제휴 문의", href: `/${lang}/contact/partner` }
             ]
         },
     ];
+
+    const getOtherLangPath = () => {
+        if (!pathname) return "/";
+        const segments = pathname.split("/");
+        // segments[0] is "", segments[1] is "ko" or "en"
+        const currentLang = segments[1];
+        if (currentLang === "ko") {
+            segments[1] = "en";
+        } else if (currentLang === "en") {
+            segments[1] = "ko";
+        } else {
+            // Should not happen with middleware, but fallback
+            return "/en" + pathname;
+        }
+        return segments.join("/");
+    };
 
     return (
         <nav
@@ -64,7 +82,7 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex justify-between items-center relative z-50">
                 {/* Logo */}
-                <Link href="/" className="z-50 relative">
+                <Link href={`/${lang}`} className="z-50 relative">
                     <img
                         src="/images/logo_labinbio.png"
                         alt="LabinBio"
@@ -123,6 +141,15 @@ export default function Navbar() {
                             </AnimatePresence>
                         </div>
                     ))}
+
+                    {/* Language Switcher */}
+                    <Link
+                        href={getOtherLangPath()}
+                        className={`text-sm font-bold border border-current px-3 py-1 rounded-full transition-colors ${isScrolled ? "text-primary hover:bg-primary hover:text-white" : "text-white hover:bg-white hover:text-primary"
+                            }`}
+                    >
+                        {lang === 'ko' ? 'EN' : 'KO'}
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -168,6 +195,13 @@ export default function Navbar() {
                             )}
                         </div>
                     ))}
+                    <Link
+                        href={getOtherLangPath()}
+                        className="inline-block text-center w-full py-3 mt-4 border border-gray-300 rounded-lg font-bold"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        {lang === 'ko' ? 'English' : '한국어'}
+                    </Link>
                 </div>
             )}
         </nav>

@@ -1,0 +1,21 @@
+{
+    "nav": {
+        "about": "회사소개",
+        "products": "제품소개",
+        "features": "기술/앱",
+        "contact": "문의하기"
+    },
+    "footer": {
+        "contact": "연락처",
+        "rights": "All rights reserved.",
+        "company": "바이오구오구",
+        "description": "반려동물과 함께하는 행복한 삶을 위해, 과학적인 진단과 건강한 먹거리를 연구합니다."
+    },
+    "hero": {
+        "preheading": "PREMIUM PET HEALTHCARE",
+        "title": "반려견을 위한 <br /> <span class='text-primary'>스마트 헬스케어</span>의 시작",
+        "description": "바이오구오구는 최첨단 바이오 기술로 반려동물의 건강 상태를 집에서 간편하게 진단하고, 건강한 간식으로 관리하는 토탈 솔루션을 제공합니다.",
+        "cta_product": "제품 보러가기",
+        "cta_story": "브랜드 스토리"
+    }
+}

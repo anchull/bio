@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero({ heroDict, lang }: { heroDict: any; lang: string }) {
     useEffect(() => {
         // Prevent browser from restoring scroll position automatically
         if ('scrollRestoration' in history) {
@@ -56,23 +56,22 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full border border-white/30 text-white/80 text-xs font-semibold tracking-wider mb-6 backdrop-blur-md">
-                        PREMIUM PET HEALTHCARE
+                        {heroDict.preheading}
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                        반려견을 위한 <br />
-                        <span className="text-primary">스마트 헬스케어</span>의 시작
-                    </h1>
+                    <h1
+                        className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+                        dangerouslySetInnerHTML={{ __html: heroDict.title }}
+                    />
                     <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed">
-                        바이오구오구는 최첨단 바이오 기술로 반려동물의 건강 상태를 집에서 간편하게 진단하고,
-                        건강한 간식으로 관리하는 토탈 솔루션을 제공합니다.
+                        {heroDict.description}
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4">
-                        <Link href="/products/diagnostic" className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 text-center">
-                            제품 보러가기
+                        <Link href={`/${lang}/products/diagnostic`} className="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 text-center">
+                            {heroDict.cta_product}
                         </Link>
-                        <Link href="/about/story" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all text-center">
-                            브랜드 스토리
+                        <Link href={`/${lang}/about/story`} className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all text-center">
+                            {heroDict.cta_story}
                         </Link>
                     </div>
                 </motion.div>
