@@ -30,26 +30,31 @@ export default function Hero({ heroDict, lang }: { heroDict: any; lang: string }
 
     return (
         <section id="hero" className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
-            {/* Background Image/Overlay */}
+            {/* Background Layers */}
+            <div className="absolute inset-0 z-0 bg-black" />
+
+            {/* Fallback Image */}
+            <div
+                className="absolute inset-0 z-10 bg-cover bg-center bg-no-repeat opacity-60"
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2969&auto=format&fit=crop')" }}
+            />
+
             {/* Background Video */}
             <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="absolute inset-0 z-0 w-full h-full object-cover opacity-80"
+                className="absolute inset-0 z-20 w-full h-full object-cover opacity-80"
             >
                 <source src="/videos/hero.mp4" type="video/mp4" />
-                {/* Fallback image if needed */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: "url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2969&auto=format&fit=crop')" }}
-                />
             </video>
-            <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-transparent to-black/20" />
+
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 z-30 bg-gradient-to-b from-black/50 via-transparent to-black/30" />
 
             {/* Content */}
-            <div className="relative z-10 container mx-auto px-6 text-center md:text-left">
+            <div className="relative z-40 container mx-auto px-6 text-center md:text-left">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
