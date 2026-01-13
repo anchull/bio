@@ -22,7 +22,7 @@ export default async function FaqPage({ params }: { params: Promise<{ lang: stri
 
                 <div className="w-full">
                     <img
-                        src="/images/faq_content.png"
+                        src={lang === 'en' ? "/images/faq_content_en.jpg" : "/images/faq_content.png"}
                         alt="FAQ Content"
                         className="w-full h-auto rounded-3xl shadow-sm border border-gray-100"
                     />
