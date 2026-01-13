@@ -5,9 +5,11 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between gap-12 border-b border-white/10 pb-12 mb-12">
                     {/* Brand */}
                     <div>
-                        <h2 className="text-2xl font-bold mb-6">
-                            <span className="text-primary">BIO</span>GUOGU
-                        </h2>
+                        <img
+                            src="/images/logo_labinbio.png"
+                            alt="LabinBio"
+                            className="h-8 w-auto mb-6 object-contain"
+                        />
                         <p className="text-gray-400 max-w-sm leading-relaxed">
                             반려동물과 함께하는 행복한 삶을 위해, <br />
                             과학적인 진단과 건강한 먹거리를 연구합니다.
@@ -27,7 +29,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-                    <p>&copy; {new Date().getFullYear()} Bioguogu. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} LabinBio. All rights reserved.</p>
 
                 </div>
             </div>

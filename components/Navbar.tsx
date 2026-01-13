@@ -64,9 +64,12 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex justify-between items-center relative z-50">
                 {/* Logo */}
-                <Link href="/" className="text-2xl font-bold tracking-tighter z-50">
-                    <span className={isScrolled || isMobileMenuOpen ? "text-primary" : "text-white"}>BIO</span>
-                    <span className={isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white"}>GUOGU</span>
+                <Link href="/" className="z-50 relative">
+                    <img
+                        src="/images/logo_labinbio.png"
+                        alt="LabinBio"
+                        className="h-10 w-auto object-contain"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}

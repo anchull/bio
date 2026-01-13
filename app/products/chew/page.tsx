@@ -18,6 +18,7 @@ export default function ChewProductPage() {
                     <img src="/images/chew_new_3.png" alt="Dental Chew Lifestyle" className="w-full h-auto" />
                     <img src="/images/chew_new_4.png" alt="Dental Chew Sizes" className="w-full h-auto" />
                     <img src="/images/chew_new_5.png" alt="Dental Chew Specs" className="w-full h-auto" />
+                    <img src="/images/chew_new_6.png" alt="Dental Chew Guide & Details" className="w-full h-auto" />
                 </div>
             </section>
         </main>
