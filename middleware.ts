@@ -37,6 +37,7 @@ export function middleware(request: NextRequest) {
         // For now, simple check for assets
         if (
             pathname.startsWith('/images') ||
+            pathname.startsWith('/videos') ||
             pathname.startsWith('/favicon.ico') ||
             pathname.startsWith('/_next')
         ) {
