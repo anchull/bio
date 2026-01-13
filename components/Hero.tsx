@@ -36,7 +36,6 @@ export default function Hero({ heroDict, lang }: { heroDict: any; lang: string }
                 loop
                 muted
                 playsInline
-                poster="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2969&auto=format&fit=crop"
                 className="absolute inset-0 z-0 w-full h-full object-cover"
             >
                 <source src="/videos/hero.mp4" type="video/mp4" />
